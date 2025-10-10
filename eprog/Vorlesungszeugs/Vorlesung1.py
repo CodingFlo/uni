@@ -2,7 +2,7 @@
 x = 2/3
 
 # {:A.Bf}
-# A: Anzahl an Zeichen insgesamt (kann von B "überschrieben werden")
+# A: Anzahl an Zeichen insgesamt (kann von B "überschrieben" werden)
 # B: Anzahl der Kommastellen
 # f: Zeichen für ein Float (wichtig scheinbar, vielleicht geht aber auch lf oder ähnliches)
 

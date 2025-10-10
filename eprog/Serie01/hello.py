@@ -19,6 +19,7 @@ def checkInput(text):
 
     return userInput
 
+
 final_exam = checkInput("Final exam grade")
 weekly_exam = checkInput("Weekly exam grade")
 exercise = checkInput("Exercise grade")

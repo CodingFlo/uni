@@ -1,5 +1,5 @@
 # Übung 2
-print("Hello, World! ", end="")
+print("Hello, World!", end=" ")
 print("I am Florian Kainrath and I study technical mathematics at TU Wien")
 
 # Übung 3
@@ -22,7 +22,7 @@ def checkInput(text):
 
 final_exam = checkInput("Final exam grade")
 weekly_exam = checkInput("Weekly exam grade")
-exercise = checkInput("Exercise grade")
+exercise = checkInput("Exercise grade\t")
 
 grade = 0.4 * final_exam + 0.4 * weekly_exam + 0.2 * exercise
 

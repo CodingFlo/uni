@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{xcolor} % Für rote Markierungen
+\usepackage{enumitem} % Für die flexiblere Listenumgebung
+
+\begin{document}
+
+\section*{Aufgabe 1:c}
+
+\subsection*{Logische Schlussfolgerung}
+Sind eine Implikation $A \Rightarrow B$ und ihre Prämisse $A$ wahr, so folgt das Konklusion $B$ wahr ist (Modus Ponens).
+
+Kann man etwas über den Wahrheitsgehalt der Prämisse $A$ aussagen, wenn Implikation $A \Rightarrow B$ und Konklusion $B$ wahr sind?
+\bigskip
+
+\textbf{Antwort:}
+Nein, man kann über den Wahrheitsgehalt der Prämisse $A$ keine eindeutige Aussage treffen.
+\begin{itemize}
+    \item Wenn $A$ wahr ist und $A \Rightarrow B$ wahr ist, dann muss $B$ wahr sein.
+    \item Wenn $A$ falsch ist und $A \Rightarrow B$ wahr ist, dann kann $B$ trotzdem wahr sein (z.B. bei der Aussage: "Wenn es regnet (falsch), dann ist der Himmel blau (wahr)". Falsch $\Rightarrow$ Wahr ist wahr).
+\end{itemize}
+Die Schlussfolgerung, dass aus $(A \Rightarrow B) \land B$ die Prämisse $A$ folgt, wird als \textbf{Bejahung des Konsequens} bezeichnet und ist ein \textbf{logischer Fehlschluss}.
+
+\bigskip
+\bigskip
+
+\subsection*{Analyse der Ungleichungen und Beweise}
+
+\textbf{(i) Ungleichung vom arithmetischen und geometrischen Mittel (AGM)}
+\[
+    A \text{ bezeichne die Aussage } \forall x, y \in \mathbb{R}: x, y > 0 \Rightarrow \frac{x+y}{2} \geq \sqrt{xy}
+\]
+
+\begin{enumerate}[label=(\alph*)]
+    \item \textbf{Entscheidung und Begründung:}
+    Die Aussage $A$ ist \textbf{wahr}.
+    Sie stellt die klassische Ungleichung zwischen dem arithmetischen Mittel und dem geometrischen Mittel dar, die für alle positiven reellen Zahlen gilt.
+
+    \item \textbf{Analyse des Beweises:}
+    Der folgende "Beweis" ist \textbf{richtig}. Er verwendet eine äquivalente Umformung der zu beweisenden Ungleichung bis zu einer Aussage, deren Gültigkeit trivial ist.
+    \begin{itemize}
+        \item \textbf{Die gezeigte Beweiskette:} $\frac{x+y}{2} \geq \sqrt{xy} \iff x+y \geq 2\sqrt{xy} \iff x+y - 2\sqrt{xy} \geq 0 \iff (\sqrt{x} - \sqrt{y})^2 \geq 0$.
+        \item \textbf{Lokalisierung des Fehlers:} Es gibt \textbf{keinen Fehler}.
+        \item \textbf{Begründung:} Die Schritte im "Beweis" stellen \textbf{Äquivalenzumformungen} dar (insbesondere da $x, y > 0$ vorausgesetzt wird und das Multiplizieren mit $2$ bzw. die Umformung zur Binomischen Formel verlustfrei ist). Da die letzte Zeile $(\sqrt{x} - \sqrt{y})^2 \geq 0$ für alle reellen Zahlen ($\sqrt{x}$ und $\sqrt{y}$ sind reell) wahr ist, muss die erste Zeile $\frac{x+y}{2} \geq \sqrt{xy}$ ebenfalls wahr sein.
+    \end{itemize}
+\end{enumerate}
+
+\bigskip
+
+\textbf{(ii) Ungleichung $x+1 \leq 2x$}
+\[
+    A \text{ bezeichne die Aussage } \forall x > 0: x+1 \leq 2x
+\]
+
+\begin{enumerate}[label=(\alph*)]
+    \item \textbf{Entscheidung und Begründung:}
+    Die Aussage $A$ ist \textbf{falsch}.
+    Löst man die Ungleichung $x+1 \leq 2x$ nach $x$ auf, erhält man $1 \leq x$, d.h., die Ungleichung gilt nur für $x \geq 1$.
+    \textbf{Gegenbeispiel:} Für $x = 0,5$ gilt $0,5 + 1 = 1,5$, aber $2 \cdot 0,5 = 1$. Da $1,5 \not\leq 1$ ist, ist die Aussage für alle $x > 0$ falsch.
+
+    \item \textbf{Analyse des Beweises:}
+    Der folgende "Beweis" ist \textbf{falsch}.
+    \begin{itemize}
+        \item \textbf{Die gezeigte Beweiskette:} $x+1 \leq 2x \Rightarrow x^2 - 1 \leq 2x^2 - 2x \Rightarrow 0 \leq x^2 - 2x + 1 \iff 0 \leq (x-1)^2$.
+        \item \textbf{Lokalisierung des Fehlers:} Der Fehler liegt in der \textbf{Richtung der Schlussfolgerung}. Der Beweis geht von der zu beweisenden Aussage ($x+1 \leq 2x$) aus und leitet daraus eine wahre Aussage ($0 \leq (x-1)^2$) ab.
+        \item \textbf{Begründung:} Das korrekte Ableiten einer wahren Aussage aus einer Behauptung (Implikation: $A \Rightarrow B$) beweist nicht, dass die ursprüngliche Behauptung $A$ wahr ist (siehe logischer Fehlschluss der \textbf{Bejahung des Konsequens} oben). Der Beweis müsste die Schritte als \textbf{Äquivalenzumformungen} oder in \textbf{umgekehrter Reihenfolge} (von $0 \leq (x-1)^2$ zu $x+1 \leq 2x$) durchführen.
+        \item \textbf{Modifikation des Beweises:} Der Beweis kann \textbf{nicht modifiziert werden, um die Aussage A als wahr zu beweisen}, da $A$ (für $\forall x > 0$) \textbf{falsch} ist. Die Rückwärts-Kette
+        $0 \leq (x-1)^2$
+        $\iff 0 \leq x^2 - 2x + 1$
+        $\iff x^2 - 1 \leq 2x^2 - 2x$ (Multiplikation mit $x-1$ kann Ungleichung umkehren!)
+        würde zwar zeigen, dass $x+1 \leq 2x$ für $x \geq 1$ gilt, aber dies widerspricht der Behauptung, dass sie für alle $x>0$ gilt. Der Fehler liegt also nicht nur in der Logik, sondern auch in der falschen Aussage selbst.
+    \end{itemize}
+\end{enumerate}
+
+\end{document}

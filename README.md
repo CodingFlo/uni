@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 📚 **Uni-Materialien**
 
 Dieses Repository dient als zentrale Sammlung für alle Materialien meiner **aktuellen Vorlesungen und Übungen**. Es soll mir und anderen Studierenden, die ähnliche Kurse belegen, als organisierte Anlaufstelle dienen.
@@ -39,3 +40,6 @@ Dieses Repository ist primär für den **persönlichen Gebrauch** gedacht. Falls
 2.  Erstelle einen neuen **Branch** (`git checkout -b feature/neue-inhalte`).
 3.  Füge deine Änderungen hinzu.
 4.  Erstelle einen **Pull Request** und beschreibe deine Änderungen kurz.
+=======
+Test
+>>>>>>> uni/HEAD

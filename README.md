@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## 📚 **Uni-Materialien**
 
 Dieses Repository dient als zentrale Sammlung für alle Materialien meiner **aktuellen Vorlesungen und Übungen**. Es soll mir und anderen Studierenden, die ähnliche Kurse belegen, als organisierte Anlaufstelle dienen.
